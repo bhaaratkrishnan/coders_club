@@ -7,6 +7,15 @@ module.exports = {
 			colors: {
 				"logoBlue" : "#233dff"
 			},
+			keyframes : {
+				borderPulse: {
+					"0%": {transform: "border-width: 0px"},
+					"100%":{transform:"border-width: 1px"}
+				}
+			},
+			animation: {
+				borderPulse: "borderPulse 2s infinite"
+			}
 		},
 	},
 	plugins: [],
