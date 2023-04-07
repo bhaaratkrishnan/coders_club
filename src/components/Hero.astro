@@ -6,28 +6,29 @@ import CodeTyping from "./CodeTyping.svelte";
 <section id="hero">
   <div class="bg-cover bg-center bg-[url('/imgs/HeroImage.jpg')] h-screen">
     <div
-      class="p-16 flex flex-col justify-center bg-gradient-to-r from-neutral-950 backdrop-blur-lg w-full h-full backdrop-brightness-50 backdrop-contrast-125 -backdrop-hue-rotate-15"
-    >
+      class="px-4 space-y-5 flex flex-col justify-start bg-gradient-to-b md:bg-gradient-to-r from-neutral-950 backdrop-blur-lg w-full h-full backdrop-brightness-50 backdrop-contrast-125 -backdrop-hue-rotate-15"
+    > 
+      <NavBar />
       <!-- title and typing effect section  -->
-      <div class="flex flex-row">
+      <div class="flex flex-col pt-10 space-y-4 md:flex-row">
         <!-- title text  -->
         <div
-          class="flex flex-col basis-1/2 group transition ease-in-out duration-500 md:hover:scale-90 md:hover:translate-x-10"
+          class="flex flex-col pl-20 md:basis-1/2 group transition ease-in-out duration-500 md:hover:scale-90 md:hover:translate-x-10"
         >
           <div
-            class="text-white font-semibold antialiased text-8xl md:group-hover:text-teal-300 transition ease-in-out"
+            class="text-white font-semibold antialiased text-8xl md:group-hover:text-logoBlue transition ease-in-out"
           >
             Coders Club
           </div>
           <div
-            class="text-teal-300 font-normal indent-4 subpixel-antialiased text-4xl md:group-hover:text-white transition ease-in-out"
+            class="text-logoBlue font-normal indent-4 subpixel-antialiased text-4xl md:group-hover:text-white transition ease-in-out"
           >
             Easwari Engineering College
           </div>
         </div>
         <!-- typing effect  -->
-        <div class="basis-1/2">
-          <CodeTyping client:load/>
+        <div class="md:basis-1/2">
+          <CodeTyping client:load />
         </div>
       </div>
     </div>

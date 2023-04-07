@@ -1,3 +1,30 @@
 ---
-
+const navBarItems = [
+  { name: "About Us", link: "#" },
+  { name: "Objectives", link: "#" },
+  { name: "Our Team", link: "#" },
+  { name: "Events", link: "#" },
+];
 ---
+
+<div class="flex flex-row justify-center items-center space-x-36">
+  <!-- logo  -->
+  <img
+    src="/imgs/Logo.png"
+    class="w-36 h-36 object-cover transition ease-in-out hover:brightness-150 hover:saturate-150 hover:scale-110"
+    alt=""
+  />
+  {
+    navBarItems.map((item) => (
+      <a href="">
+        <div
+          class="text-white font-semibold text-xl 
+        hover:text-blue-600 transition ease-in-out hover:translate-y-2 hover:scale-105
+        antialiased"
+        >
+          {item.name}
+        </div>
+      </a>
+    ))
+  }
+</div>
