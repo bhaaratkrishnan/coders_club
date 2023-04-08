@@ -10,35 +10,35 @@ const objectivesArray = [
     content:
       "Offering mentorship and guidance to members who are just starting their coding journey is an important objective of a coder's club. This helps beginners to develop their coding skills and learn how to navigate the world of programming.",
   },
-  {
-    title: "Coding Events",
-    content:
-      "Organizing coding events, hackathons, and workshops is an essential part of a coder's club. These events provide opportunities for members to come together and learn from each other, share their knowledge, and improve their coding skills.",
-  },
+
   {
     title: "Logical Thinking",
     content:
-      " By creating a platform that focuses on logical thinking, the club can help engineering students become better equipped to tackle complex challenges in their future careers. Through logical thinking better understanding of technology and potential career opportunities in the tech industry.",
+      "The club can help engineering students become better equipped to tackle complex challenges in their future careers. Through logical thinking better understanding of technology and potential career opportunities in the tech industry.",
   },
-  {
-    title: "Professional Development",
-    content:
-      "Finally, coding clubs may also aim to help their members develop the skills and experience needed to pursue careers in technology. This can involve providing job search resources, organizing career fairs, and inviting guest speakers from the industry.",
-  },
+
   {
     title: "Fun and Enjoyment",
     content:
-      "Finally, coding clubs are often a place for members to have fun and enjoy their shared passion for coding and technology. This can involve organizing social events, hackathons, coding competitions, and other activities that allow members to connect and collaborate in a supportive and enjoyable environment.",
+      "Coding club is often a place for members to have fun and enjoy their shared passion for coding and technology. This can involve organizing social events, hackathons, coding competitions, and other activities that allow members to connect and collaborate in a supportive and enjoyable environment.",
+  },
+  {
+    title: "Showcase your Talent",
+    content:
+      "Creating a platform for members to showcase their coding projects and receive feedback from peers is an important objective of a coder's club. This can help members to improve their coding skills, get feedback on their projects, and showcase their work to potential employers.",
+  },
+  {
+    title: "Project based Learning",
+    content:
+      " Some coding clubs focus on project-based learning, where members work on real-world coding projects and gain hands-on experience. This can help members develop their coding skills and learn how to apply them to solve practical problems.",
   },
 ];
 ---
 
-<div class="flex flex-col py-12 px-8 justify-center items-center space-y-12">
+<div class="flex flex-col py-16 px-8 justify-center items-center space-y-12">
   <!-- objectives title  -->
   <div
-    class="text-transparent text-6xl font-bold hover:scale-110 bg-white bg-clip-text hover:bg-gradient-to-l from-white
-
-    to-logoBlue hover:text-gradient transition ease-linear"
+    class="text-transparent text-6xl hover:tracking-widest font-bold hover:scale-110 bg-white bg-clip-text hover:bg-gradient-to-l from-white to-logoBlue hover:text-gradient transition-all ease-in-out"
   >
     Objectives
   </div>
@@ -54,9 +54,11 @@ const objectivesArray = [
        hover:scale-110 flex flex-col space-y-2 
        rounded-xl w-80 hover:-skew-x-3 hover:-skew-y-3 hover:leading-8"
           >
-            <div class="text-white group-hover:text-transparent group-hover:bg-gradient-to-br from-white to-logoBlue 
-             bg-clip-text group-hover:brightness-110 transition ease-in-out font-medium text-3xl">
-              {item.title}
+            <div
+              class="text-white group-hover:text-transparent group-hover:bg-gradient-to-br from-white to-logoBlue 
+             bg-clip-text group-hover:brightness-110 transition ease-in-out font-medium text-3xl"
+            >
+              <i>{item.title}</i>
             </div>
             <div class="text-neutral-500 group-hover:text-neutral-300 transition ease-in-out text-base text-clip">
               {item.content}
@@ -65,7 +67,5 @@ const objectivesArray = [
         </div>
       ))
     }
-
-    
   </div>
 </div>

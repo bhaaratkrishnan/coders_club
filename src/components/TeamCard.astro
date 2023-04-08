@@ -1,0 +1,34 @@
+---
+const {item} = Astro.props;
+---
+<div
+        class="flex flex-col p-8 m-8 group
+        justify-center items-center space-y-2 hover:scale-110 
+        border-2 hover:border-dashed border-solid rounded-xl bg-gradient-to-t from-transparent 
+        hover:bg-gradient-to-b hover:to-neutral-800
+        transition ease-in-out duration-300"
+      >
+        <!-- image  -->
+        <div
+          class="rounded-full shadow-lg shadow-neutral-500 group-hover:shadow-red-300 duration-300 transition-all ease-in-out"
+        >
+          <img
+            src={item.imgLink}
+            class="rounded-full object-cover w-52 h-52"
+            alt=""
+          />
+        </div>
+        <!-- name  -->
+        <div
+          class="pt-4 text text-3xl text-white subpixel-antialiased font-serif font-light
+          group-hover:font-medium"
+        >
+          {item.name}
+        </div>
+        <!-- posting  -->
+        <div
+          class="text text-2xl text-white subpixel-antialiased font-mono font-semibold"
+        >
+          {item.posting}
+        </div>
+      </div>

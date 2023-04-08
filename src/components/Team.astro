@@ -1,6 +1,81 @@
 ---
+import TeamCard from "./TeamCard.astro";
+
+const teamArray1 = [
+  {
+    name:"Bhaarat Krishnan J",
+    posting:"Vice President",
+    imgLink: "/imgs/BhaaratKrishnan.jpg",
+    social: "",
+  },
+  {
+    name:"Akash M",
+    posting:"Secretary",
+    imgLink: "/imgs/Akash.jpeg",
+    social: "",
+  },
+  {
+    name:"Bhaarat Krishnan J",
+    posting:"Vice President",
+    imgLink: "/imgs/BhaaratKrishnan.jpg",
+    social: "",
+  },
+  {
+    name:"Akash M",
+    posting:"Secretary",
+    imgLink: "/imgs/Akash.jpeg",
+    social: "",
+  },{
+    name:"Bhaarat Krishnan J",
+    posting:"Vice President",
+    imgLink: "/imgs/BhaaratKrishnan.jpg",
+    social: "",
+  },
+  {
+    name:"Akash M",
+    posting:"Secretary",
+    imgLink: "/imgs/Akash.jpeg",
+    social: "",
+  },
+  
+]
+const teamArray2 = [{
+    name:"Bhaarat Krishnan J",
+    posting:"Vice President",
+    imgLink: "/imgs/BhaaratKrishnan.jpg",
+    social: "",
+  },
+  {
+    name:"Akash M",
+    posting:"Secretary",
+    imgLink: "/imgs/Akash.jpeg",
+    social: "",
+  },];
 ---
 
-<div class="flex flex-col">
-    div.text-white
-</div>
+<section id="team">
+  <div class="flex flex-col justify-center py-16 px-8 items-center space-y-16">
+    <!-- title  -->
+    <div
+      class="text-transparent text-6xl hover:tracking-widest font-bold hover:scale-110 bg-white bg-clip-text hover:bg-gradient-to-r from-white to-logoBlue hover:text-gradient transition-all ease-in-out"
+    >
+      Our Amazing People
+    </div>
+    <!-- main leaders frame  -->
+    <div class="grid grid-cols-3">
+      <!-- single card  -->
+      {
+        teamArray1.map((teamMember) => (
+        <TeamCard item={teamMember} />
+        ))
+      }
+    </div>
+    <div class="grid grid-cols-2">
+      {
+        teamArray2.map((teamMember) => (
+          <TeamCard item={teamMember}/>
+        ))
+      }
+    </div>
+  </div>
+</section>
