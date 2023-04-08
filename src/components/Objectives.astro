@@ -35,37 +35,39 @@ const objectivesArray = [
 ];
 ---
 
-<div class="flex flex-col py-16 px-8 justify-center items-center space-y-12">
-  <!-- objectives title  -->
-  <div
-    class="text-transparent text-6xl hover:tracking-widest font-bold hover:scale-110 bg-white bg-clip-text hover:bg-gradient-to-l from-white to-logoBlue hover:text-gradient transition-all ease-in-out"
-  >
-    Objectives
-  </div>
-  <!-- cards -->
-  <div class="grid grid-cols-3 gap-20">
-    <!-- card single  -->
-    {
-      objectivesArray.map((item) => (
-        <div class="flex border rounded-xl">
-          <div
-            class="bg-neutral-800 group p-8 hover:bg-gradient-to-br 
-       from-transparent to-neutral-900 transition ease-in-out 
-       hover:scale-110 flex flex-col space-y-2 
-       rounded-xl w-80 hover:-skew-x-3 hover:-skew-y-3 hover:leading-8"
-          >
+<section id="objectives">
+  <div class="flex flex-col items-center justify-center space-y-12 px-8 py-16">
+    <!-- objectives title  -->
+    <div
+      class="hover:text-gradient bg-white from-white to-logoBlue bg-clip-text text-6xl font-bold text-transparent transition-all ease-in-out hover:scale-110 hover:bg-gradient-to-l hover:tracking-widest"
+    >
+      Objectives
+    </div>
+    <!-- cards -->
+    <div class="grid grid-cols-3 gap-20">
+      <!-- card single  -->
+      {
+        objectivesArray.map((item) => (
+          <div class="flex rounded-xl border">
             <div
-              class="text-white group-hover:text-transparent group-hover:bg-gradient-to-br from-white to-logoBlue 
-             bg-clip-text group-hover:brightness-110 transition ease-in-out font-medium text-3xl"
+              class="group flex w-80 flex-col 
+          space-y-2 rounded-xl bg-neutral-800 from-transparent 
+          to-neutral-900 p-8 transition ease-in-out 
+       hover:-skew-x-3 hover:-skew-y-3 hover:scale-110 hover:bg-gradient-to-br hover:leading-8"
             >
-              <i>{item.title}</i>
-            </div>
-            <div class="text-neutral-500 group-hover:text-neutral-300 transition ease-in-out text-base text-clip">
-              {item.content}
+              <div
+                class="from-white to-logoBlue bg-clip-text text-3xl font-medium 
+       text-white transition ease-in-out group-hover:bg-gradient-to-br group-hover:text-transparent group-hover:brightness-110"
+              >
+                <i>{item.title}</i>
+              </div>
+              <div class="text-clip text-base text-neutral-500 transition ease-in-out group-hover:text-neutral-300">
+                {item.content}
+              </div>
             </div>
           </div>
-        </div>
-      ))
-    }
+        ))
+      }
+    </div>
   </div>
-</div>
+</section>

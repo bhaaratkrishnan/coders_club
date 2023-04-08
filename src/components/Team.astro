@@ -1,79 +1,190 @@
 ---
-import TeamCard from "./TeamCard.astro";
-
+import TeamCard from "./TeamCard.svelte";
 const teamArray1 = [
   {
-    name:"Bhaarat Krishnan J",
-    posting:"Vice President",
+    name: "Arockia Abins",
+    posting: "Club Advisor",
+    imgLink: "/imgs/Abins.jpeg",
+    social: "",
+    lead: false,
+  },
+  {
+    name: "Dr Ahamed Ali S",
+    posting: "Club Advisor",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: false,
+  },
+  {
+    name: "Justin Das",
+    posting: "Club Advisor",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: false,
+  },
+  {
+    name: "You",
+    posting: "President",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: false,
+  },
+  {
+    name: "You",
+    posting: "Vice President",
     imgLink: "/imgs/BhaaratKrishnan.jpg",
     social: "",
+    lead: false,
   },
   {
-    name:"Akash M",
-    posting:"Secretary",
+    name: "You",
+    posting: "Tresurer",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: false,
+  },
+];
+const teamArray2 = [
+  {
+    name: "Akash M",
+    posting: "Secretary",
     imgLink: "/imgs/Akash.jpeg",
     social: "",
+    lead: false,
   },
   {
-    name:"Bhaarat Krishnan J",
-    posting:"Vice President",
-    imgLink: "/imgs/BhaaratKrishnan.jpg",
+    name: "You",
+    posting: "Joint Secretary",
+    imgLink: "/imgs/DummyAvatar.jpg",
     social: "",
+    lead: false,
+  },
+];
+const leadArray1 = [
+  {
+    name: "You",
+    posting: "Competitive Programming Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
   },
   {
-    name:"Akash M",
-    posting:"Secretary",
-    imgLink: "/imgs/Akash.jpeg",
+    name: "You",
+    posting: "Competitive Programming Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
     social: "",
-  },{
-    name:"Bhaarat Krishnan J",
-    posting:"Vice President",
-    imgLink: "/imgs/BhaaratKrishnan.jpg",
-    social: "",
+    lead: true,
   },
   {
-    name:"Akash M",
-    posting:"Secretary",
-    imgLink: "/imgs/Akash.jpeg",
+    name: "You",
+    posting: "Web Development Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
     social: "",
-  },
-  
-]
-const teamArray2 = [{
-    name:"Bhaarat Krishnan J",
-    posting:"Vice President",
-    imgLink: "/imgs/BhaaratKrishnan.jpg",
-    social: "",
+    lead: true,
   },
   {
-    name:"Akash M",
-    posting:"Secretary",
-    imgLink: "/imgs/Akash.jpeg",
+    name: "You",
+    posting: "Web Development Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
     social: "",
-  },];
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "App Development Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "App Development Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "AI & ML Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "AI & ML Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "Cyber Security Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "Cyber Security Lead",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "Event Coordinator",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "Event Coordinator",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+  {
+    name: "You",
+    posting: "Event Coordinator",
+    imgLink: "/imgs/DummyAvatar.jpg",
+    social: "",
+    lead: true,
+  },
+];
 ---
 
 <section id="team">
-  <div class="flex flex-col justify-center py-16 px-8 items-center space-y-16">
+  <div class="flex flex-col items-center justify-center space-y-16 px-8 py-16">
     <!-- title  -->
     <div
-      class="text-transparent text-6xl hover:tracking-widest font-bold hover:scale-110 bg-white bg-clip-text hover:bg-gradient-to-r from-white to-logoBlue hover:text-gradient transition-all ease-in-out"
+      class="hover:text-gradient bg-white from-white to-logoBlue bg-clip-text text-6xl font-bold text-transparent transition-all ease-in-out hover:scale-110 hover:bg-gradient-to-r hover:tracking-widest"
     >
       Our Amazing People
     </div>
-    <!-- main leaders frame  -->
-    <div class="grid grid-cols-3">
+    <!-- main leaders 1 frame  -->
+    <div class="grid grid-cols-3 gap-x-16">
       <!-- single card  -->
       {
         teamArray1.map((teamMember) => (
-        <TeamCard item={teamMember} />
+          <TeamCard item={teamMember} client:visible />
         ))
       }
     </div>
-    <div class="grid grid-cols-2">
+    <!-- main leaders 2 frame  -->
+    <div class="grid grid-cols-2 gap-x-14">
       {
         teamArray2.map((teamMember) => (
-          <TeamCard item={teamMember}/>
+          <TeamCard item={teamMember} client:visible />
+        ))
+      }
+    </div>
+    <!-- leads  -->
+    <div class="grid grid-cols-5 justify-items-center gap-x-10">
+      {
+        leadArray1.map((teamMember) => (
+          <TeamCard item={teamMember} client:visible />
         ))
       }
     </div>

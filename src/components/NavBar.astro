@@ -1,8 +1,8 @@
 ---
 const navBarItems = [
-  { name: "About Us", link: "#" },
-  { name: "Objectives", link: "#" },
-  { name: "Our Team", link: "#" },
+  { name: "About Us", link: "#aboutUs" },
+  { name: "Objectives", link: "#objectives" },
+  { name: "Our Team", link: "#team" },
   { name: "Events", link: "#" },
 ];
 ---
@@ -16,7 +16,7 @@ const navBarItems = [
   />
   {
     navBarItems.map((item) => (
-      <a href="">
+      <a href={item.link} >
         <div
           class="text-white font-semibold text-xl 
         hover:text-blue-600 transition ease-in-out hover:translate-y-2 hover:scale-105
