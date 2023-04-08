@@ -23,8 +23,8 @@
 </script>
 
 <div
-  class={`group flex flex-col items-center justify-center space-y-2 rounded-xl bg-gradient-to-t from-transparent  transition-all duration-300 ease-in-out hover:scale-110 hover:border-dashed hover:bg-gradient-to-b hover:to-neutral-800` +
-    (item.lead ? " p-12" : " p-8")}
+  class={`group  flex flex-col items-center justify-center space-y-4 rounded-xl bg-gradient-to-t from-transparent  transition-all duration-300 ease-in-out hover:scale-110 hover:bg-gradient-to-b hover:to-neutral-800` +
+    (item.lead ? " p-4 lg:p-12" : " p-8")}
 >
   <!-- image  -->
   <div
@@ -32,15 +32,15 @@
   >
     <img
       src={item.imgLink}
-      class={"rounded-full object-cover object-center " +
-        (item.lead ? "h-48 w-48" : "h-52 w-52")}
+      class={"rounded-full object-cover object-center" +
+        (item.lead ? " lg:h-48 lg:w-48 h-24 w-24" : " h-52 w-52")}
       alt=""
     />
   </div>
   <div class="flex flex-col">
     <!-- name  -->
     <div
-      class="text pt-4 font-serif text-3xl font-light text-white subpixel-antialiased group-hover:font-medium"
+      class="text pt-4 font-serif text-xl lg:text-3xl font-light text-white subpixel-antialiased group-hover:font-medium"
     >
       {name}
       {#if cursor === 1}
@@ -49,7 +49,7 @@
     </div>
     <!-- posting  -->
     <div
-      class="text font-mono text-2xl font-semibold text-white subpixel-antialiased"
+      class="text font-mono text-lg lg:text-2xl font-semibold text-white subpixel-antialiased"
     >
       {posting}
       {#if cursor === 2}

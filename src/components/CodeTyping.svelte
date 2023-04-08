@@ -34,8 +34,8 @@
   });
 </script>
 
-<div class="flex flex-col justify-center w-5/6 space-y-8 hover:scale-y-110 transition ease-in-out
-hover:-translate-x-20 duration-300">
+<div class="flex flex-col justify-center w-5/6 space-y-8 lg:hover:scale-y-110 transition ease-in-out
+lg:hover:-translate-x-20 duration-300">
   <!-- editor part  -->
   <div class="flex flex-col rounded-xl bg-[#1e1e1e]">
     <!-- top bar of editor  -->

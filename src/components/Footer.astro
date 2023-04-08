@@ -18,7 +18,7 @@ const footerLinks = [
 ---
 
 <div
-  class="flex flex-row justify-around bg-gradient-to-b from-transparent to-neutral-800 p-16"
+  class="flex flex-col lg:flex-row space-y-5 justify-around bg-gradient-to-b from-transparent to-neutral-800 p-16"
 >
   <div class="flex flex-col space-y-2">
     <div class="text text-3xl text-logoBlue">Quick Links</div>
@@ -34,11 +34,11 @@ const footerLinks = [
     }
   </div>
   <div class="flex flex-col justify-center space-y-4">
-    <div class="text text-4xl text-white">Designed and Created by</div>
+    <div class="text text-lg lg:text-4xl text-white">Designed and Created by</div>
     {
       creatorList.map((item) => (
         <a href={item.social} target="_blank">
-          <div class="text antiliased font-mono text-3xl font-bold text-logoBlue transition ease-in-out hover:scale-110 hover:text-white">
+          <div class="text antiliased font-mono text-2xl lg:text-3xl font-bold text-logoBlue transition ease-in-out hover:scale-110 hover:text-white">
             {item.name}
           </div>
         </a>
