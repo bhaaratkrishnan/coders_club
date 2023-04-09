@@ -22,7 +22,7 @@
     {#each languageArray as langImg, index}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <div  on:click={() => languageIdx  = index}
-        class={"transition ease-in-out hover:scale-110 hover:grayscale-0 " + (index === languageIdx ? "" : " grayscale")}
+        class={"transition ease-in-out hover:scale-110 animate-pulseFast hover:grayscale-0 " + (index === languageIdx ? "" : " grayscale")}
       >
         <img
           src={"/imgs/" + langImg}
