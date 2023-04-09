@@ -93,7 +93,7 @@
       </div>
       <div class="text-green-600 text-base break-words">
         codersclub@codersclub-linux/~$ <span class="text-white"
-          >{codeContent.substring(1,codeContent.length-1)}</span
+          >{codeContent.replaceAll("'","")}</span
         >
       </div>
     </div>
