@@ -40,7 +40,7 @@ lg:hover:-translate-x-20 duration-300">
   <div class="flex flex-col rounded-xl bg-[#1e1e1e]">
     <!-- top bar of editor  -->
     <div
-      class="flex flex-row  bg-[#282828] space-x-4 py-2 px-4 justify-start items-center rounded-xl"
+      class="flex flex-row  bg-[#282828] space-x-4 py-4 px-4 justify-start items-center rounded-xl"
     >
       <!-- icons  -->
       <div class="container w-4 h-4 bg-red-500 rounded-full" />

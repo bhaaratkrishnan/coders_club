@@ -23,12 +23,14 @@
 </script>
 
 <div
-  class={`group  flex flex-col items-center justify-center space-y-4 rounded-xl bg-gradient-to-t from-transparent  transition-all duration-300 ease-in-out hover:scale-110 hover:bg-gradient-to-b hover:to-neutral-800` +
+  class={`group  flex flex-col items-center justify-center 
+  space-y-4 rounded-xl  transition-all m-2
+  duration-300 ease-in-out hover:scale-110 hover:bg-white` +
     (item.lead ? " p-4 lg:p-12" : " p-8")}
 >
   <!-- image  -->
   <div
-    class="rounded-full shadow-lg shadow-neutral-500 transition-all duration-300 ease-in-out group-hover:shadow-blue-100"
+    class="rounded-full shadow-lg shadow-neutral-500 transition-all duration-300 ease-in-out group-hover:shadow-black"
   >
     <img
       src={item.imgLink}
@@ -40,21 +42,22 @@
   <div class="flex flex-col">
     <!-- name  -->
     <div
-      class="text pt-4 font-serif text-xl lg:text-3xl font-light text-white subpixel-antialiased group-hover:font-medium"
+      class="text pt-4 font-serif text-xl lg:text-3xl font-light text-white subpixel-antialiased group-hover:font-semibold
+      group-hover:text-black"
     >
-      {name}
-      {#if cursor === 1}
+      {item.name}
+      <!-- {#if cursor === 1}
         <span class="text-white font-bold animate-pulse">|</span>
-      {/if}
+      {/if} -->
     </div>
     <!-- posting  -->
     <div
       class="text font-mono text-lg lg:text-2xl font-semibold text-neutral-500 subpixel-antialiased"
     >
-      {posting}
-      {#if cursor === 2}
+      {item.posting}
+      <!-- {#if cursor === 2}
         <span class="text-white font-bold animate-pulse">|</span>
-      {/if}
+      {/if} -->
     </div>
   </div>
 </div>
