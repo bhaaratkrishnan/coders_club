@@ -9,7 +9,7 @@
 
 <div
   class="flex flex-col justify-center w-5/6 space-y-8 transition ease-in-out
- duration-300"
+ duration-300 hover:scale-105"
 >
     {#if languageIdx === 0}
         <CCode codeContentArray={wordsArray}/>
