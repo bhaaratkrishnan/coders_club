@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  const codeContentArray = ["'hello world'", "'வணக்கம்'", "'Namasate'","'Good Day !'"];
+  export let codeContentArray;
   let codeContent = "";
   let arrayIndex = 0;
   let charIndex = 0;
@@ -34,8 +34,7 @@
   });
 </script>
 
-<div class="flex flex-col justify-center w-5/6 space-y-8 lg:hover:scale-y-110 transition ease-in-out
-lg:hover:-translate-x-20 duration-300">
+
   <!-- editor part  -->
   <div class="flex flex-col rounded-xl bg-[#1e1e1e]">
     <!-- top bar of editor  -->
@@ -54,31 +53,19 @@ lg:hover:-translate-x-20 duration-300">
     >
       <!-- include stdio  -->
       <div class="">
-        <span class="text-[#b47baf]">#include </span>
-        <span class="text-[#ce9178]">&ltstdio.h&gt</span>
+        <span class="text-[#b47baf]">def</span>
+        <span class="text-[#dcdcaa]">main</span><span class="text-white">():</span>
       </div>
-      <!-- main program -->
-      <div class="">
-        <span class="text-[#569cd6]">int</span>
-        <span class="text-[#dcdcaa]">main()</span>
-        <span class="text-[#dcdcaa]">&lbrace;</span>
-      </div>
+      
       <!-- printf statement  -->
       <div class="indent-8 text-white break-words">
-        <span class="text-[#dcdcaa]">printf</span><span class="text-white"
+        <span class="text-[#dcdcaa]">print</span><span class="text-white"
           >&lpar;</span
         ><span class="text-[#ce9178]">{codeContent}</span><span
           class="text-neutral-200 animate-pulse text-2xl">|</span
-        ><span>&rpar;;</span>
+        ><span>&rpar;</span>
       </div>
-      <!-- return 0;  -->
-      <div class="indent-8">
-        <span class="text-[#b47baf]">return</span>
-        <span class="text-[#9eb393]">0</span><span class="text-white">;</span>
-      </div>
-      <div>
-        <span class="text-[#dcdcaa]">&rbrace;</span>
-      </div>
+      <div class="text-[#b47baf] indent-8">return</div>
     </div>
   </div>
   <!-- output part  -->
@@ -101,7 +88,7 @@ lg:hover:-translate-x-20 duration-300">
     >
       <div class="text-green-600 text-base">
         codersclub@codersclub-linux/~$ <span class="text-white"
-          >gcc -o Main main.c && ./Main</span
+          >python3 main.py</span
         >
       </div>
       <div class="text-green-600 text-base break-words">
@@ -111,4 +98,3 @@ lg:hover:-translate-x-20 duration-300">
       </div>
     </div>
   </div>
-</div>

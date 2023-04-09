@@ -1,6 +1,6 @@
 ---
 import NavBar from "./NavBar.astro";
-import CodeTyping from "./CodeTyping.svelte";
+import CodeTyping from "./CodeTypingComp/CodeTypingComp.svelte";
 ---
 
 <section id="hero">
@@ -30,7 +30,7 @@ import CodeTyping from "./CodeTyping.svelte";
         </div>
         <!-- typing effect  -->
         <div class="flex justify-center items-center md:basis-1/2 pt-8">
-          <CodeTyping client:load />
+          <CodeTyping client:visible />
         </div>
       </div>
     </div>
