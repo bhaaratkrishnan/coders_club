@@ -4,9 +4,9 @@ import CodeTyping from "./CodeTypingComp/CodeTypingComp.svelte";
 ---
 
 <section id="hero">
-  <div class="bg-cover bg-center bg-[url('/imgs/HeroImage.jpg')] h-screen">
+  <div class="bg-cover bg-center bg-[url('/imgs/HeroImage.jpg')] h-screen mb-4">
     <div
-      class="px-4 space-y-5 flex flex-col justify-start bg-gradient-to-b 
+      class="px-4  space-y-2 lg:space-y-5 flex flex-col justify-start bg-gradient-to-b 
       md:bg-gradient-to-b  from-transparent to-neutral-900 backdrop-blur-lg w-full h-full 
       backdrop-brightness-50 backdrop-contrast-125 -backdrop-hue-rotate-15"
     > 
@@ -30,7 +30,7 @@ import CodeTyping from "./CodeTypingComp/CodeTypingComp.svelte";
         </div>
         <!-- typing effect  -->
         <div class="flex justify-center items-center md:basis-1/2 pt-8">
-          <CodeTyping client:visible />
+          <CodeTyping client:load />
         </div>
       </div>
     </div>

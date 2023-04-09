@@ -9,7 +9,7 @@
 
 <div
   class="flex flex-col justify-center w-5/6 space-y-8 transition ease-in-out
- duration-300 hover:scale-105"
+ duration-300 hover:scale-105 mb-4"
 >
     {#if languageIdx === 0}
         <CCode codeContentArray={wordsArray}/>
@@ -18,7 +18,7 @@
     {:else}
         <JsCode codeContentArray={wordsArray}/>
     {/if}
-  <div class="flex flex-row space-x-8">
+  <div class="flex flex-row space-x-8 m-4">
     {#each languageArray as langImg, index}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
       <div  on:click={() => languageIdx  = index}
