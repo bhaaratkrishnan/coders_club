@@ -1,30 +1,21 @@
 ---
-const navBarItems = [
-  { name: "About Us", link: "#aboutUs" },
-  { name: "Objectives", link: "#objectives" },
-  { name: "Our Team", link: "#team" },
-  { name: "Events", link: "#" },
-];
+import Hero from "./Hero.astro";
 ---
 
-<div class="hidden lg:flex flex-row justify-center items-center space-x-44 m-8">
-  <!-- logo  -->
-  <img
-    src="/imgs/Logo.png"
-    class="w-12 h-12 object-cover object-center transition ease-in-out hover:brightness-150 hover:saturate-150 hover:scale-110"
-    alt=""
-  />
-  {
-    navBarItems.map((item) => (
-      <a href={item.link} >
-        <div
-          class="text-white font-semibold text-xl 
-        hover:text-blue-600 transition ease-in-out hover:translate-y-2 hover:scale-105
-        antialiased"
-        >
-          {item.name}
-        </div>
-      </a>
-    ))
-  }
+<div class="drawer">
+  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+    <Hero />
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer" class="drawer-overlay"></label>
+    <ul class="menu w-80 bg-base-100 p-4 text-base-content">
+      <!-- Sidebar content here -->
+      <li><a href="#home">Home</a></li>
+      <li><a href="#aboutUs">About Us</a></li>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#team">Our Team</a></li>
+    </ul>
+  </div>
 </div>

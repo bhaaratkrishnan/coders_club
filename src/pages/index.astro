@@ -1,27 +1,24 @@
 ---
-export const prerender = true;
-import Hero from "../components/Hero.astro";
 import AboutUs from "../components/AboutUs.astro";
+import Footer from "../components/Footer.astro";
+import NavBar from "../components/NavBar.astro";
 import Objectives from "../components/Objectives.astro";
 import Team from "../components/Team.astro";
-import Footer from "../components/Footer.astro";
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-  <!-- Made by 
-    Bhaarat Krishnan J -->
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Coders Club</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Club</title>
   </head>
-  <body class="bg-neutral-900">
-    <Hero />
-    <AboutUs />
-    <Objectives />
-    <Team />
-    <Footer />
+  <body>
+    <section id="home"><NavBar /></section>
+    <section id="aboutUs"><AboutUs /></section>
+    <section id="objectives"><Objectives /></section>
+    <section id="team"><Team /></section>
+    <section id="footer"><Footer /></section>
   </body>
 </html>

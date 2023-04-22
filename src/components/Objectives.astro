@@ -36,7 +36,7 @@ const objectivesArray = [
 ---
 
 <section id="objectives">
-  <div class="flex flex-col items-center justify-center space-y-12 px-8 py-16">
+  <div class="flex flex-col items-center justify-center space-y-12 px-8 py-16 ">
     <!-- objectives title  -->
     <div
       class="hover:text-gradient bg-white from-white to-logoBlue bg-clip-text text-6xl font-bold text-transparent transition-all ease-in-out hover:scale-110 hover:bg-gradient-to-l hover:tracking-wide lg:hover:tracking-widest"
@@ -44,20 +44,20 @@ const objectivesArray = [
       Objectives
     </div>
     <!-- cards -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-20">
+    <div class="grid grid-cols-1 gap-20 lg:grid-cols-3">
       <!-- card single  -->
       {
         objectivesArray.map((item) => (
           <div class="flex rounded-xl border">
             <div
               class="group flex w-80 flex-col 
-          space-y-2 rounded-xl bg-neutral-800 from-transparent 
-          to-neutral-900 p-8 transition ease-in-out 
+          space-y-2 rounded-xl bg-base-300 from-transparent 
+          to-primary-focus p-8 transition ease-in-out 
        hover:-skew-x-3 hover:-skew-y-3 hover:scale-110 hover:bg-gradient-to-br hover:leading-8"
             >
               <div
                 class="from-white to-logoBlue bg-clip-text text-3xl font-medium 
-       text-white transition ease-in-out group-hover:bg-gradient-to-br group-hover:text-transparent group-hover:brightness-110"
+       text-white transition ease-in-out  group-hover:brightness-110"
               >
                 <i>{item.title}</i>
               </div>

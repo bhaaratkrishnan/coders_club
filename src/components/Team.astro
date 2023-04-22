@@ -1,197 +1,101 @@
 ---
-import TeamCard from "./TeamCard.svelte";
-import TeamLeadCard from "./TeamLeadCard.svelte";
-const teamArray1 = [
+import TeamCardAdvisor from "./TeamCardAdvisor.astro";
+import TeamCardGlass from "./TeamCardGlass.astro";
+import LeadDropdown from "./LeadDropdown.astro";
+import leadData from "../data/leadData.js";
+const teamAdvisors = [
   {
     name: "Arockia Abins",
     posting: "Club Advisor",
-    imgLink: "/imgs/DummyAvatar.jpg",
+    imgLink: "/imgs/abins.jpg",
     social: "",
-    lead: false,
   },
   {
     name: "Dr Ahamed Ali S",
     posting: "Club Advisor",
-    imgLink: "/imgs/DummyAvatar.jpg",
+    imgLink: "/imgs/ahmed.jpg",
     social: "",
-    lead: false,
   },
   {
     name: "Justin Das",
     posting: "Club Advisor",
     imgLink: "/imgs/DummyAvatar.jpg",
     social: "",
-    lead: false,
   },
+];
+const teamArray1 = [
   {
-    name: "You",
+    name: "Rishal Cheran",
     posting: "President",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: false,
+    imgLink: "/imgs/rishal.jpg",
+    social: "https://www.linkedin.com/in/rishal-cheran-2a62591b2/",
   },
   {
     name: "Bhaarat Krishnan J",
     posting: "Vice President",
     imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: false,
+    social: "https://www.linkedin.com/in/bhaarat-krishnan-440494220",
   },
   {
-    name: "You",
-    posting: "Tresurer",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: false,
+    name: "Rohidh G C",
+    posting: "Treasurer",
+    imgLink: "/imgs/rohidhgc.jpg",
+    social: "https://www.linkedin.com/in/rohidh-g-c-0416a6213",
   },
 ];
 const teamArray2 = [
   {
     name: "Akash M",
     posting: "Secretary",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: false,
+    imgLink: "/imgs/akash.jpg",
+    social: "https://www.linkedin.com/in/akashm2003/",
   },
   {
-    name: "You",
+    name: "Radhika",
     posting: "Joint Secretary",
-    imgLink: "/imgs/DummyAvatar.jpg",
+    imgLink: "/imgs/radhika.jpg",
     social: "",
-    lead: false,
   },
 ];
-const leadArray1 = [
-  {
-    name: "You",
-    posting: "Competitive Programming Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Competitive Programming Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Web Development Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Web Development Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "App Development Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "App Development Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "AI & ML Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "AI & ML Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Cyber Security Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Cyber Security Lead",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Event Coordinator",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Event Coordinator",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-  {
-    name: "You",
-    posting: "Event Coordinator",
-    imgLink: "/imgs/DummyAvatar.jpg",
-    social: "",
-    lead: true,
-  },
-];
+const leads = leadData();
 ---
 
 <section id="team">
-  <div
-    class="flex flex-col items-center justify-center space-y-16 px-8 py-16"
-  >
+  <div class="flex flex-col items-center justify-center space-y-16 px-8 py-16">
     <!-- title  -->
     <div
       class="hover:text-gradient mb-4 bg-white from-white to-logoBlue bg-clip-text text-6xl font-bold text-transparent transition-all ease-in-out hover:scale-110 hover:bg-gradient-to-r hover:tracking-wide lg:hover:tracking-widest"
     >
       Our Amazing People
     </div>
-    <!-- main leaders 1 frame  -->
-    <div class="grid grid-cols-1 gap-x-16 lg:grid-cols-3">
+    <!-- advisors grid  -->
+    <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
+      <!-- single card  -->
+      {
+        teamAdvisors.map((teamMember) => (
+          <TeamCardAdvisor teamMember={teamMember} />
+        ))
+      }
+    </div>
+    <!-- core 1 frame  -->
+    <div class="grid grid-cols-1 gap-16 lg:grid-cols-3">
       <!-- single card  -->
       {
         teamArray1.map((teamMember) => (
-          <TeamCard item={teamMember} client:visible />
+          <TeamCardGlass teamMember={teamMember} />
         ))
       }
     </div>
-    <!-- main leaders 2 frame  -->
-    <div class="grid grid-cols-1 gap-x-14 lg:grid-cols-2">
+    <!-- core 2 frame  -->
+    <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
       {
         teamArray2.map((teamMember) => (
-          <TeamCard item={teamMember} client:visible />
+          <TeamCardGlass teamMember={teamMember} />
         ))
       }
     </div>
-    <!-- leads  -->
-    <div
-      class="grid grid-cols-2 justify-items-center space-y-4 lg:grid-cols-5 lg:space-y-0"
-    >
-      {
-        leadArray1.map((teamMember) => (
-          <TeamLeadCard item={teamMember} client:visible />
-        ))
-      }
+    <div class="flex-col w-full">
+      {leads.map((v: any) => <LeadDropdown leadData={v} />)}
     </div>
   </div>
 </section>

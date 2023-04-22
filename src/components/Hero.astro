@@ -1,38 +1,20 @@
 ---
-import NavBar from "./NavBar.astro";
-import CodeTyping from "./CodeTypingComp/CodeTypingComp.svelte";
+import CodeTypingComp from "./CodeTypingComp/CodeTypingComp.svelte";
 ---
 
-<section id="hero">
-  <div class="flex flex-col mb-4 h-screen bg-[url('/imgs/HeroImage.jpg')]">
-    <div
-      class="flex h-full flex-col justify-start space-y-2 bg-gradient-to-b from-transparent to-neutral-900 px-4 backdrop-blur-lg backdrop-brightness-50 backdrop-contrast-125 -backdrop-hue-rotate-15 md:bg-gradient-to-b lg:space-y-2"
-    >
-      <NavBar />
-      <!-- title and typing effect section  -->
-      <div
-        class="flex flex-col items-center justify-center space-y-4 pt-6 lg:pt-0 lg:flex-row"
-      >
-        <!-- title text  -->
-        <div
-          class="group flex flex-col items-center justify-center transition duration-500 ease-in-out md:basis-1/2 md:hover:translate-x-10 md:hover:scale-125 lg:pl-20"
-        >
-          <div
-            class="text-6xl font-semibold text-white antialiased transition ease-in-out md:group-hover:text-white lg:text-9xl"
-          >
-            C.A.D
-          </div>
-          <div
-            class="indent-4 text-xl font-normal text-white subpixel-antialiased brightness-110 saturate-150 transition ease-in-out md:group-hover:text-white lg:text-4xl"
-          >
-            Ctrl Alt Delete
-          </div>
-        </div>
-        <!-- typing effect  -->
-        <div class="flex items-center justify-center pt-2 md:basis-1/2">
-          <CodeTyping client:idle />
-        </div>
+<div class="bg-[url(/imgs/HeroImage.jpg)]">
+  <div
+    class="hero min-h-screen bg-gradient-to-b from-transparent to-base-100 backdrop-blur backdrop-brightness-75"
+  >
+    <div class="hero-content flex-col p-12 lg:flex-row ">
+      <div class="lg:mr-20">
+        <h1 class="text-5xl font-bold lg:text-7xl text-white uppercase">Coding Club</h1>
+        <p class="py-6">
+          Talk is cheap.Show me the Code
+        </p>
+        <label for="my-drawer" class="btn btn-primary drawer-button">Get Started!</label>
       </div>
+      <CodeTypingComp client:load />
     </div>
   </div>
-</section>
+</div>

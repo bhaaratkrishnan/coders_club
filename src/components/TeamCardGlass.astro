@@ -1,0 +1,18 @@
+---
+const { teamMember } = Astro.props;
+---
+
+<div class="card glass w-80">
+  <figure>
+    <img src={teamMember.imgLink} alt={teamMember.name} class="w-full h-80 object-cover object-center" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">{teamMember.name}</h2>
+    <p>{teamMember.posting}</p>
+    <div class="card-actions justify-end">
+      <a href={teamMember.social} target="_blank"
+        ><button class="btn-primary btn bg-base-300">Contact</button></a
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+---
+import TeamLeadCard from "./TeamLeadCard.astro";
+const { leadData } = Astro.props;
+---
+
+<div
+  tabindex="0"
+  class="collapse-arrow rounded-box collapse border border-base-300 bg-base-100"
+>
+  <div class="collapse-title text-xl font-medium">
+    {leadData.title}
+  </div>
+  <div class="collapse-content">
+    <div class="flex flex-col lg:flex-row">
+      {leadData.leads.map((v:any) => (<TeamLeadCard item={v} />))}
+    </div>
+  </div>
+</div>
