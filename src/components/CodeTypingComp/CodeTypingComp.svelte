@@ -8,8 +8,8 @@
 </script>
 
 <div
-  class="flex flex-col justify-center  space-y-8 transition ease-in-out
- duration-300 scale-75 lg:scale-100 mb-4"
+  class="flex flex-col  space-y-8 transition ease-in-out
+ duration-300 scale-75 lg:scale-100 m-4"
 >
     {#if languageIdx === 0}
         <CCode codeContentArray={wordsArray}/>

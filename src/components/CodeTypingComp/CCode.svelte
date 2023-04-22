@@ -50,7 +50,7 @@
   </div>
   <!-- text section for editor  -->
   <div
-    class="flex flex-col px-4 py-3 font-semibold text-lg md:text-xl font-mono tracking-wide"
+    class="flex flex-col px-4 py-3 font-semibold text-lg md:text-xl font-mono"
   >
     <!-- include stdio  -->
     <div class="">
