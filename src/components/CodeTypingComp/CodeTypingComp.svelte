@@ -9,7 +9,7 @@
 
 <div
   class="flex flex-col  space-y-8 transition ease-in-out
- duration-300 m-4"
+ duration-300 lg:m-4 scale-75 lg:scale-100"
 >
     {#if languageIdx === 0}
         <CCode codeContentArray={wordsArray}/>
