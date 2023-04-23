@@ -6,7 +6,7 @@ export default function leadData() {
         {
           name: "Rohith C",
           social: "",
-          imgLink: "/leads/rohith.jpg",
+          imgLink: "/leads/rohith.webp",
         },
       ],
     },
@@ -16,12 +16,12 @@ export default function leadData() {
         {
           name: "Bharanidharan G",
           social: "",
-          imgLink: "/leads/bharani.jpg",
+          imgLink: "/leads/bharani.webp",
         },
         {
           name: "Praiseline J",
           social: "",
-          imgLink: "/leads/praiseline.jpg",
+          imgLink: "/leads/praiseline.webp",
         },
       ],
     },
@@ -31,12 +31,12 @@ export default function leadData() {
         {
           name: "Pooja Sri K",
           social: "",
-          imgLink: "/leads/pooja.jpg",
+          imgLink: "/leads/pooja.webp",
         },
         {
           name: "Mohammed Anees",
           social: "",
-          imgLink: "/leads/anees.jpg",
+          imgLink: "/leads/anees.webp",
         },
       ],
     },
@@ -46,12 +46,12 @@ export default function leadData() {
         {
           name: "Gayathri R",
           social: "http://linkedin.com/in/gayathri-r-9b2280218",
-          imgLink: "/leads/gayathri.jpg",
+          imgLink: "/leads/gayathri.webp",
         },
         {
           name: "Harini P",
           social: "http://linkedin.com/in/harini-purushoth-547375212",
-          imgLink: "/leads/harini.jpg",
+          imgLink: "/leads/harini.webp",
         },
       ],
     },
@@ -61,12 +61,12 @@ export default function leadData() {
         {
           name: "Aadhithya R",
           social: "",
-          imgLink: "/leads/aadhithya.jpg",
+          imgLink: "/leads/aadhithya.webp",
         },
         {
           name: "Sujesh G",
           social: "",
-          imgLink: "/leads/sujesh.jpg",
+          imgLink: "/leads/sujesh.webp",
         },
       ],
     },
@@ -76,12 +76,12 @@ export default function leadData() {
         {
           name: "Sriram R",
           social: "https://www.linkedin.com/in/sri-ram-1020131b3",
-          imgLink: "/leads/sriram.jpg",
+          imgLink: "/leads/sriram.webp",
         },
         {
           name: "Suvarna Narayanan",
           social: "",
-          imgLink: "/leads/suvarnanarayanan.jpg",
+          imgLink: "/leads/suvarnanarayanan.webp",
         },
       ],
     },
@@ -91,12 +91,12 @@ export default function leadData() {
         {
           name: "Muktheeswaran V",
           social: "",
-          imgLink: "/leads/muktheeswaran.jpg",
+          imgLink: "/leads/muktheeswaran.webp",
         },
         {
           name: "Ashik M",
           social: "",
-          imgLink: "/leads/ashik.jpg",
+          imgLink: "/leads/ashik.webp",
         },
       ],
     },
@@ -106,12 +106,12 @@ export default function leadData() {
         {
           name: "Nithyasree I",
           social: "https://www.linkedin.com/in/nithyasree-i-b61352211",
-          imgLink: "/leads/nithyasree.jpg",
+          imgLink: "/leads/nithyasree.webp",
         },
         {
           name: "Prashithaa Abhirami",
           social: "",
-          imgLink: "/leads/prashithaa.jpg",
+          imgLink: "/leads/prashithaa.webp",
         },
       ],
     },
@@ -121,12 +121,12 @@ export default function leadData() {
         {
           name: "Priyadharshini T",
           social: "https://www.linkedin.com/in/priya-parthasarathy-bb3729214",
-          imgLink: "/leads/priyadharshini.jpg",
+          imgLink: "/leads/priyadharshini.webp",
         },
         {
           name: "Swetha",
           social: "",
-          imgLink: "/leads/swetha.jpg",
+          imgLink: "/leads/swetha.webp",
         },
       ],
     },
@@ -136,17 +136,17 @@ export default function leadData() {
         {
           name: "Kishore Babu M S",
           social: "https://www.linkedin.com/in/kishore-babu-17ba841aa",
-          imgLink: "/leads/kishore.jpg",
+          imgLink: "/leads/kishore.webp",
         },
         {
           name: "Roshan G K",
           social: "https://www.linkedin.com/in/roshan-g-k-aa3aa5249",
-          imgLink: "/leads/roshan.jpg",
+          imgLink: "/leads/roshan.webp",
         },
         {
           name: "Lakshmi A",
           social: "",
-          imgLink: "/leads/lakshmi.jpg",
+          imgLink: "/leads/lakshmi.webp",
         },
       ],
     },

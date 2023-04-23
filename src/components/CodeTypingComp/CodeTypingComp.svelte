@@ -3,13 +3,13 @@
   import CCode from "./CCode.svelte";
   import JsCode from "./JsCode.svelte";
   let languageIdx = 0;
-  const languageArray = ["C.png", "Python.png", "Javascript.png"];
+  const languageArray = ["C.webp", "Python.webp", "Javascript.webp"];
   const wordsArray = ["'hello world'", "'வணக்கம்'", "'Namasate'","'Good Day !'"];
 </script>
 
 <div
   class="flex flex-col  space-y-8 transition ease-in-out
- duration-300 scale-75 lg:scale-100 m-4"
+ duration-300 m-4"
 >
     {#if languageIdx === 0}
         <CCode codeContentArray={wordsArray}/>

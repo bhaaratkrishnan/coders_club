@@ -2,7 +2,7 @@
 import CodeTypingComp from "./CodeTypingComp/CodeTypingComp.svelte";
 ---
 
-<div class="bg-[url(/imgs/HeroImage.jpg)] bg-center bg-fixed">
+<div class="bg-[url(/imgs/HeroImage.webp)] bg-center bg-fixed">
   <div
     class="hero min-h-screen bg-gradient-to-b from-transparent to-base-100 backdrop-blur backdrop-brightness-75"
   >
@@ -14,7 +14,7 @@ import CodeTypingComp from "./CodeTypingComp/CodeTypingComp.svelte";
         </p>
         <label for="my-drawer" class="btn btn-primary drawer-button">Get Started!</label>
       </div>
-      <CodeTypingComp client:load />
+      <CodeTypingComp client:idle />
     </div>
   </div>
 </div>
