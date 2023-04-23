@@ -95,7 +95,7 @@ export default function leadData() {
         },
         {
           name: "Ashik M",
-          social: "",
+          social: "https://www.linkedin.com/in/mrashikmartin/",
           imgLink: "/leads/ashik.webp",
         },
       ],
