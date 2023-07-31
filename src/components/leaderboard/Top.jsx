@@ -13,7 +13,6 @@ export default function Top(props) {
               </div>
             ) : null}
             <div className={styles.photo}>
-              <img src={entry.photo} alt="" />
             </div>
             <div className={styles.name}>{entry.name}</div>
             <div className={styles.score}>{entry.score}</div>

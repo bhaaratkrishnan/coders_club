@@ -12,7 +12,6 @@ export default function All(props) {
               <div className={styles.rank}>{index + 4}</div>
               <div className={styles.details}>
                 <div className={styles.photo}>
-                  <img src={entry.photo} alt="" />
                 </div>
                 <div className={styles.name}>{entry.name}</div>
               </div>

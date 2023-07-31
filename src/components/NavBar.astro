@@ -25,9 +25,12 @@ const navBarItems = [
     title: "Events",
     link: "/events",
   },
+  {
+    title:"Leaderboard",
+    link:"/leaderboard"
+  }
 ];
 ---
-
 
 <div class="bg-[url(/imgs/HeroImage.webp)] bg-fixed bg-center">
   <div class="drawer">
@@ -57,16 +60,18 @@ const navBarItems = [
         <div class="flex-1">
           <img
             src="/imgs/logo.webp"
-            class="h-24 lg:h-28 w-24 lg:w-28 object-cover object-center"
+            class="h-24 w-24 object-cover object-center lg:h-28 lg:w-28"
             alt=""
           />
         </div>
         <div class="hidden flex-none lg:block">
-          <ul class="menu menu-horizontal space-x-10 font-semibold text-white text-xl">
+          <ul
+            class="menu menu-horizontal space-x-10 text-xl font-semibold text-white"
+          >
             <!-- Navbar menu content here -->
             {
               navBarItems.map((v) => (
-                <li class="transition ease-in-out hover:bg-base-100">
+                <li class="hover:bg-base-100 transition ease-in-out">
                   <a href={v.link}>{v.title}</a>
                 </li>
               ))
@@ -85,9 +90,13 @@ const navBarItems = [
       <label for="my-drawer-3" class="drawer-overlay"></label>
       <ul class="menu w-72 bg-base-100 p-4 text-xl text-white">
         <!-- Sidebar content here -->
-        {navBarItems.map((v) => (
-                  <li><a href={v.link}>{v.title}</a></li>
-        ))}
+        {
+          navBarItems.map((v) => (
+            <li>
+              <a href={v.link}>{v.title}</a>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </div>
