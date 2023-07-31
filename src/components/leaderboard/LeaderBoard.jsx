@@ -4,44 +4,34 @@ import styles from "./LeaderBoard.module.css";
 
 const contestants = [
   {
-    name: "Bhaarat",
-    score: 100,
+    name: "Shyamkathir007",
   },
   {
-    name: "Bhaarat",
-    score: 90,
+    name: "Roshunsai1224",
   },
   {
-    name: "Bhaarat",
-    score: 85,
+    name: "310620104088_cse",
   },
   {
-    name: "Bhaarat",
-    score: 100,
+    name: "jayashreemahara1",
   },
   {
-    name: "Bhaarat",
-    score: 90,
+    name: "abuthahirshaikh1",
   },
   {
-    name: "Bhaarat",
-    score: 85,
+    name: "dravidkumardk04",
   },
   {
-    name: "Bhaarat",
-    score: 100,
+    name: "Akhilan_N",
   },
   {
-    name: "Bhaarat",
-    score: 90,
+    name: "Yuvaraj2k3",
   },
   {
-    name: "Bhaarat",
-    score: 85,
+    name: "manib211003",
   },
   {
-    name: "Bhaarat",
-    score: 85,
+    name: "rahulrajagopala1",
   },
 ];
 
